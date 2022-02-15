@@ -1,0 +1,67 @@
+li > a {
+  position: relative;
+  color: #707070;
+  text-decoration: none;
+}
+
+li > a:hover {
+  color: white;
+}
+
+li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #707070;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.wrapper {
+  margin: 0 auto;
+}
+
+.zoom-effect {
+  position: relative;
+
+  height: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.zoom-effect2 {
+  position: relative;
+
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.kotak {
+  top: 0;
+  left: 0;
+}
+
+.kotak img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.zoom-effect:hover .kotak img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.zoom-effect2:hover .kotak img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}

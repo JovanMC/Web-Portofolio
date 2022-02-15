@@ -1,0 +1,19 @@
+
+.wrapper{
+	width:100%;
+	height:auto;
+	margin-top:5%;
+}
+
+.owl-carousel-3 img{
+	margin-bottom:15px;
+}
+
+img{
+	
+	object-fit:cover;
+}
+
+.mb-end{
+	margin-bottom:50px;
+}
